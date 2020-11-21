@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => (
         cardHeaderRoot:      {
             backgroundColor: grey[900],
             opacity:         0.9,
-            padding: theme.spacing(1, 2),
+            padding: theme.spacing(1),
         },
         cardHeaderTitle:     {
             fontSize: '2em',
@@ -76,9 +76,7 @@ const useStyles = makeStyles((theme) => (
     }
 ));
 
-// TODO: Update MetricCard to be more customizable via props
-// TODO: Add more visual distinction for metrics cards
-// TODO: Move icon map to a util or other package so we don't need to use strings to select (same with colors?)
+
 export default function CardMetric(props) {
     const classes = useStyles();
 
@@ -87,7 +85,6 @@ export default function CardMetric(props) {
               avatarColor = 'blue',
               icon        = 'trendingUp',
               loading     = false,
-              subheader,
               title,
               value,
           } = props;

@@ -19,3 +19,5 @@
 ## Completed
 
 - [X] Add more visual distinction for `CardMetric` components
+- [X] Fix JSS duplicate class name issue
+  - https://material-ui.com/getting-started/faq/#why-arent-my-components-rendering-correctly-in-production-builds

@@ -19,8 +19,7 @@ const useStyles = makeStyles((theme) => (
     }
 ));
 
-// TODO: Add logo to navbar
-// TODO: Add links / menus as needed to menubar (or remove hamburger menu)
+
 export default function NavBar(props) {
     const classes = useStyles();
 

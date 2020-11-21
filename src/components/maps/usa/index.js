@@ -95,7 +95,7 @@ export default function UnitedStatesMap(props) {
             label.horizontalCenter = "middle";
             label.nonScaling = true;
 
-            let heat = series.heatRules.push({
+            series.heatRules.push({
                 target: circle,
                 property: "radius",
                 min: 10,
@@ -125,11 +125,11 @@ export default function UnitedStatesMap(props) {
                 }
 
                 // Control zoom
-                if (data.type == "state") {
+                if (data.type === "state") {
                     let statePolygon = polygonSeries.getPolygonById("US-" + data.state);
                     chart.zoomToMapObject(statePolygon);
                 }
-                else if (data.type == "city") {
+                else if (data.type === "city") {
                     chart.zoomToGeoPoint({
                         latitude: data.lat,
                         longitude: data.long
@@ -173,7 +173,7 @@ export default function UnitedStatesMap(props) {
                 };
 
                 // Process state-level data
-                if (regionalSeries[s.state] == undefined) {
+                if (regionalSeries[s.state] === undefined) {
                     let statePolygon = polygonSeries.getPolygonById("US-" + s.state);
                     if (statePolygon) {
 
@@ -203,7 +203,7 @@ export default function UnitedStatesMap(props) {
                 }
 
                 // Process city-level data
-                if (regionalSeries[s.city] == undefined) {
+                if (regionalSeries[s.city] === undefined) {
                     regionalSeries[s.city] = {
                         target: s.city,
                         type: "city",

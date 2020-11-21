@@ -112,8 +112,8 @@ export default function CombinedChart(props) {
 
         // Create axes
         let dateAxis = chart.xAxes.push(new am4charts.DateAxis());
-        //dateAxis.renderer.grid.template.location = 0;
-        //dateAxis.renderer.minGridDistance = 30;
+        dateAxis.renderer.grid.template.location = 0;
+        dateAxis.renderer.minGridDistance = 30;
 
         let valueAxis1 = chart.yAxes.push(new am4charts.ValueAxis());
         valueAxis1.title.text = "Sales";
@@ -129,6 +129,7 @@ export default function CombinedChart(props) {
         series1.dataFields.dateX = "date";
         series1.yAxis = valueAxis1;
         series1.name = "Target Sales";
+        // eslint-disable-next-line no-template-curly-in-string
         series1.tooltipText = "{name}\n[bold font-size: 20]${valueY}M[/]";
         series1.fill = chart.colors.getIndex(0);
         series1.strokeWidth = 0;
@@ -140,6 +141,7 @@ export default function CombinedChart(props) {
         series2.dataFields.dateX = "date";
         series2.yAxis = valueAxis1;
         series2.name = "Actual Sales";
+        // eslint-disable-next-line no-template-curly-in-string
         series2.tooltipText = "{name}\n[bold font-size: 20]${valueY}M[/]";
         series2.fill = chart.colors.getIndex(0).lighten(0.5);
         series2.strokeWidth = 0;
