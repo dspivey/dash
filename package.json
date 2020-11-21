@@ -1,7 +1,7 @@
 {
   "name": "dash",
   "version": "0.1.0",
-  "homepage": "http://dspivey.github.io/dash",
+  "homepage": "https://dspivey.github.io/dash",
   "private": true,
   "dependencies": {
     "@amcharts/amcharts4": "^4.10.11",
