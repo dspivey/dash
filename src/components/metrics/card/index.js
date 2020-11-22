@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, Typography, } from '@material-ui/core';
-import { blue, green, grey, purple, red } from '@material-ui/core/colors';
+import { blue, green, purple, red } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 import {
     BubbleChartTwoTone,
@@ -35,7 +35,7 @@ const icons = {
 const useStyles = makeStyles((theme) => (
     {
         root:                {
-            minWidth: 350,
+            // minWidth: 350,
         },
         media:               {
             height:     0,
@@ -43,13 +43,14 @@ const useStyles = makeStyles((theme) => (
         },
         avatar:              {},
         cardHeaderRoot:      {
-            backgroundColor: grey[900],
+            backgroundColor: '#2c3e50',
             opacity:         0.9,
-            padding: theme.spacing(1),
+            padding:         theme.spacing(1),
         },
         cardHeaderTitle:     {
-            fontSize: '2em',
-            color:    'white',
+            fontSize:   '2em',
+            color:      'white',
+            whiteSpace: 'nowrap',
         },
         cardHeaderSubheader: {
             color: 'white',
@@ -134,6 +135,7 @@ export default function CardMetric(props) {
                     variant="h3"
                     color="textSecondary"
                     component="p"
+                    style={{ fontSize: '3em' }}
                 >
                     {value}
                 </Typography>

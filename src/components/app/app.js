@@ -1,4 +1,5 @@
 import { Container, CssBaseline, Grid, } from '@material-ui/core';
+import { Skeleton } from '@material-ui/lab';
 import React, { useEffect, useState } from 'react';
 import { CombinedChart } from '../charts';
 import { LineChart } from '../charts';
@@ -21,7 +22,7 @@ function App() {
         setTimeout(() => {
             setLoading(false);
         }, 1500);
-    }, [setLoading]);
+    });
 
     return (
         <div>
@@ -33,7 +34,7 @@ function App() {
                     spacing={3}
                     style={{ marginBottom: 24 }}
                 >
-                    <Grid item md={3} xs={6}>
+                    <Grid item md={3} sm={6} xs={12}>
                         <CardMetric
                             avatarColor="green"
                             icon="money"
@@ -42,7 +43,7 @@ function App() {
                             loading={loading}
                         />
                     </Grid>
-                    <Grid item md={3} xs={6}>
+                    <Grid item md={3} sm={6} xs={12}>
                         <CardMetric
                             avatarColor="red"
                             icon="receipt"
@@ -51,7 +52,7 @@ function App() {
                             loading={loading}
                         />
                     </Grid>
-                    <Grid item md={3} xs={6}>
+                    <Grid item md={3} sm={6} xs={12}>
                         <CardMetric
                             avatarColor="purple"
                             icon="chart"
@@ -60,7 +61,7 @@ function App() {
                             loading={loading}
                         />
                     </Grid>
-                    <Grid item md={3} xs={6}>
+                    <Grid item md={3} sm={6} xs={12}>
                         <CardMetric
                             avatarColor="blue"
                             icon="sum"
@@ -72,27 +73,39 @@ function App() {
                 </Grid>
                 <Grid container spacing={3} style={{ marginBottom: 24 }}>
                     <Grid item md={6} sm={12}>
-                        <LineChart
-                            elementId="linechart"
-                            loading={loading}
-                            title="Charges by Year"
-                        />
+                        {
+                            loading
+                                ? <Skeleton variant="rect" width="100%" height={600} />
+                                : <LineChart
+                                    elementId="linechart"
+                                    loading={loading}
+                                    title="Charges by Year"
+                                />
+                        }
                     </Grid>
                     <Grid item md={6} sm={12}>
-                        <CombinedChart
-                            elementId="combined"
-                            loading={loading}
-                            title="Wall Road"
-                        />
+                        {
+                            loading
+                                ? <Skeleton variant="rect" width="100%" height={600} />
+                                : <CombinedChart
+                                    elementId="combined"
+                                    loading={loading}
+                                    title="Wall Road"
+                                />
+                        }
                     </Grid>
                 </Grid>
                 <Grid container spacing={3} style={{ marginBottom: 24 }}>
                     <Grid item xs={12}>
-                        <UnitedStatesMap
-                            elementId="usmap"
-                            loading={loading}
-                            title="'Merica"
-                        />
+                        {
+                            loading
+                                ? <Skeleton variant="rect" width="100%" height={600} />
+                                : <UnitedStatesMap
+                                    elementId="usmap"
+                                    loading={loading}
+                                    title="'Merica"
+                                />
+                        }
                     </Grid>
                 </Grid>
             </Container>
