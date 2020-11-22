@@ -11,10 +11,6 @@ import './app.css';
 import NavBar from './navbar';
 
 
-// TODO: Move app wide state to an AppContext (e.g. loading, status alerts)
-// TODO: Add skeleton for viz components
-// TODO: Add `collapses` around viz components and/or `rows`
-// TODO: Change viz component surface to a card instead of paper?
 function App() {
     const [loading, setLoading] = useState(true);
 
@@ -78,7 +74,6 @@ function App() {
                                 ? <Skeleton variant="rect" width="100%" height={600} />
                                 : <LineChart
                                     elementId="linechart"
-                                    loading={loading}
                                     title="Charges by Year"
                                 />
                         }
@@ -89,7 +84,6 @@ function App() {
                                 ? <Skeleton variant="rect" width="100%" height={600} />
                                 : <CombinedChart
                                     elementId="combined"
-                                    loading={loading}
                                     title="Wall Road"
                                 />
                         }
@@ -102,7 +96,6 @@ function App() {
                                 ? <Skeleton variant="rect" width="100%" height={600} />
                                 : <UnitedStatesMap
                                     elementId="usmap"
-                                    loading={loading}
                                     title="'Merica"
                                 />
                         }

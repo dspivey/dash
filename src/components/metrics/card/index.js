@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => (
         },
         avatar:              {},
         cardHeaderRoot:      {
-            backgroundColor: '#2c3e50',
+            backgroundColor: '#1e2021',
             opacity:         0.9,
             padding:         theme.spacing(1),
         },
@@ -103,12 +103,16 @@ export default function CardMetric(props) {
     );
 
     if (loading) {
-        return <Skeleton
-            className={classes.skeletonRoot}
-            variant="rect"
-            width="100%"
-            height={175}
-        />;
+        return (
+            <Card classes={{ root: classes.root }}>
+                <CardHeader
+                    avatar={<Skeleton animation="wave" variant="circle" width={48} height={48} />}
+                    title={<Skeleton animation="wave" height={10} width="80%" />}
+                    subheader={<Skeleton animation="wave" height={10} width="40%" />}
+                />
+                <Skeleton animation="wave" variant="rect" height={75} />
+            </Card>
+        );
     }
 
     return (
