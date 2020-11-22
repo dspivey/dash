@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dash/static/css/main.6775d387.chunk.css",
-    "main.js": "/dash/static/js/main.429f3080.chunk.js",
-    "main.js.map": "/dash/static/js/main.429f3080.chunk.js.map",
+    "main.css": "/dash/static/css/main.c1c9ea6d.chunk.css",
+    "main.js": "/dash/static/js/main.561a1bdf.chunk.js",
+    "main.js.map": "/dash/static/js/main.561a1bdf.chunk.js.map",
     "runtime-main.js": "/dash/static/js/runtime-main.4c8f87b8.js",
     "runtime-main.js.map": "/dash/static/js/runtime-main.4c8f87b8.js.map",
     "xlsx.js": "/dash/static/js/xlsx.8ee550e5.chunk.js",
     "xlsx.js.map": "/dash/static/js/xlsx.8ee550e5.chunk.js.map",
     "static/css/3.17f4e964.chunk.css": "/dash/static/css/3.17f4e964.chunk.css",
-    "static/js/3.b08ce616.chunk.js": "/dash/static/js/3.b08ce616.chunk.js",
-    "static/js/3.b08ce616.chunk.js.map": "/dash/static/js/3.b08ce616.chunk.js.map",
+    "static/js/3.d1ca60c3.chunk.js": "/dash/static/js/3.d1ca60c3.chunk.js",
+    "static/js/3.d1ca60c3.chunk.js.map": "/dash/static/js/3.d1ca60c3.chunk.js.map",
     "static/js/4.254b4de4.chunk.js": "/dash/static/js/4.254b4de4.chunk.js",
     "static/js/4.254b4de4.chunk.js.map": "/dash/static/js/4.254b4de4.chunk.js.map",
     "static/js/5.f6025d75.chunk.js": "/dash/static/js/5.f6025d75.chunk.js",
@@ -20,8 +20,8 @@
     "static/js/7.7b929789.chunk.js.map": "/dash/static/js/7.7b929789.chunk.js.map",
     "index.html": "/dash/index.html",
     "static/css/3.17f4e964.chunk.css.map": "/dash/static/css/3.17f4e964.chunk.css.map",
-    "static/css/main.6775d387.chunk.css.map": "/dash/static/css/main.6775d387.chunk.css.map",
-    "static/js/3.b08ce616.chunk.js.LICENSE.txt": "/dash/static/js/3.b08ce616.chunk.js.LICENSE.txt",
+    "static/css/main.c1c9ea6d.chunk.css.map": "/dash/static/css/main.c1c9ea6d.chunk.css.map",
+    "static/js/3.d1ca60c3.chunk.js.LICENSE.txt": "/dash/static/js/3.d1ca60c3.chunk.js.LICENSE.txt",
     "static/js/5.f6025d75.chunk.js.LICENSE.txt": "/dash/static/js/5.f6025d75.chunk.js.LICENSE.txt",
     "static/js/6.fe5fdc97.chunk.js.LICENSE.txt": "/dash/static/js/6.fe5fdc97.chunk.js.LICENSE.txt",
     "static/media/index.css": "/dash/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
@@ -29,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.4c8f87b8.js",
     "static/css/3.17f4e964.chunk.css",
-    "static/js/3.b08ce616.chunk.js",
-    "static/css/main.6775d387.chunk.css",
-    "static/js/main.429f3080.chunk.js"
+    "static/js/3.d1ca60c3.chunk.js",
+    "static/css/main.c1c9ea6d.chunk.css",
+    "static/js/main.561a1bdf.chunk.js"
   ]
 }
